@@ -38,6 +38,7 @@ export const UserDetailModal: FC<Props> = memo((props) => {
     setEmail(user?.email ?? "");
     setPhone(user?.phone ?? "");
   }, [user]);
+
   const onChangeUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserName(e.target.value);
   };
